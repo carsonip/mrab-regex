@@ -635,6 +635,8 @@ def _compile(pattern, flags, ignore_unused, kwargs):
         # Store what keyword arguments are needed.
         _named_args[args_key] = args_needed
 
+    info.defined_groups = None
+
     return compiled_pattern
 
 def _compile_replacement_helper(pattern, template):
